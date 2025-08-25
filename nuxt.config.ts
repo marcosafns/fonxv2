@@ -20,5 +20,16 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
-  }
+  },
+
+  nitro: {
+    preset: 'node-server' // garante que ele gere um server Node
+  },
+
+devServer: {
+  port: Number(process.env.PORT) || 3000
+}
+
+
+
 })
